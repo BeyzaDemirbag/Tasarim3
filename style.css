@@ -1,0 +1,369 @@
+*{
+    font-family: 'Big Shoulders Display', cursive;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+}
+header > div{
+    width: 990px;
+    height: 800px;
+    background-color: black;
+}
+
+header img{
+    width: 540px;
+    float: right;
+    position: relative;
+}
+
+.text > span{
+    color: white;
+}
+
+.text{
+    font-size: 96px;
+    line-height: 88px;
+    margin-top: 189px;
+    margin-left: 165px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.diff-tekilH{
+    background: linear-gradient(to right, white 65%, black 35%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.baslik2{
+    position: absolute;
+    right: 164px;
+    top: 190px;
+    font-size: 25px;
+    max-width: 350px;
+    line-height: 32px;
+    font-family:'Big Shoulders Display', cursive; 
+}
+
+.baslik2 button{
+    width: 204px;
+    height: 65px;
+    border: 0px;
+    padding: 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.94px;
+    letter-spacing: 3.63636px;
+    background-color: #151515;
+    font-family:'Big Shoulders Display', cursive; 
+}
+
+.button-area{
+    cursor: pointer;
+    margin-top: 64px;
+}
+
+.button-area > div{
+    width: 54px;
+    height: 65px;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D5966C;
+}
+
+main{
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    padding: 165px;
+    margin: 0px auto;
+    grid-template-columns: 2fr 1.5fr 2.2fr;
+    grid-auto-rows: minmax(313px, auto);
+    gap: 30px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.grid-it img{
+    width: 100%;
+    height: 100%;
+    image-rendering: optimizeQuality;
+}
+
+.it1 {
+    padding: 50px 80px 0px 0px;
+}
+
+.it2{
+    grid-column: 2/4;
+}
+
+.it3{
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+
+.it5{
+    grid-column: 3/4;
+    color: white;
+    background-color: black;
+    padding: 64px 40px 64px 47px
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    padding: 70px 0px;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+}
+
+.footer-text_last{
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.footer-text_middle{
+    max-width: 440px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.socialMedia img{
+    cursor: pointer;
+}
+
+.aciklama{
+    font-size: 22px;
+    font-weight: 300;
+    color: #444444;
+    font-family: 'Outfit', sans-serif;
+}
+
+.grid-text h1{
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#white{
+    color: white;
+}
+
+.button-area:hover button{
+    transition: 0.5s;
+    background-color: #D5966C;
+}
+    
+.button-area:hover .ok{
+    transition: 0.5s;
+    background-color: #151515;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    header > div{
+        width: auto;
+    }
+    .text{
+        right: 40px;
+        top: 50px;
+        color: black;
+        font-size: 70px;
+        margin: 0px;
+    }
+    .text_last{
+        color: black;
+        line-height: 65px;
+    }
+    .diff-tekilH{
+        color: black;
+    }
+    .baslik2{
+        top: 440px;
+        right: 20px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .gorsel1{
+        content: url('Tablet Gorselleri/image-hero@2x.jpg');
+        width: 100%;
+
+    }
+    header > div{
+        width: 100%;
+        background-color: white;
+    }
+    header{
+        width: 100%;
+    }
+    .text{
+        left:16px;
+        top: 320px;
+        margin: 0px;
+        color: #151515;
+    }
+    .baslik2{
+        top: 500px;
+        left: 16px;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .it1{
+        padding: 0px;
+        text-align: center;
+    }
+
+    .it2{
+        content: url('Tablet Gorselleri/image-grid-1@2x.jpg');
+    }
+
+    .it3{
+        content: url('Tablet Gorselleri/image-grid-2@2x.jpg');
+    }
+
+    .it4{
+        content: url('Tablet Gorselleri/image-grid-3@2x.jpg');
+    }
+
+    footer{
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 382px){
+    .text{
+        font-size: 50px;
+        top: 250px;
+    }
+    .baslik2{
+        top: 400px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    header > div{
+        width: auto;
+    }
+
+    .text{
+        right: 40px;
+        top: 50px;
+        font-size: 70px;
+        color: black;
+        margin: 0px;
+    }
+    
+    .text_last{
+        color: black;
+        line-height: 65px;
+    }
+
+    .diff-tekilH{
+        color: black;
+    }
+
+    .baslik2{
+        top: 440px;
+        right: 20px;
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 550px){
+    .gorsel1{
+        content: url('Mobile Gorselleri/image-hero@2x.jpg');
+        width: 100%;
+    }
+
+    header > div{
+        width: 100%;
+        background-color: white;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .text{
+        left:16px;
+        top: 320px;
+        margin: 0px;
+    }
+
+    .baslik2{
+        top: 500px;
+        left: 16px;
+        color: #151515;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .it1{
+        padding: 0px;
+        text-align: center;
+    }
+
+    .it2{
+        content: url('Mobile Gorselleri/image-grid-1@2x.jpg');
+    }
+    
+    .it3{
+        content: url('Mobile Gorselleri/image-grid-2@2x.jpg');
+    }
+
+    .it4{
+        content: url('Mobile Gorselleri/image-grid-3@2x.jpg');
+    }
+
+    footer{
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 382px){
+    .text{
+        font-size: 50px;
+        top: 250px;
+    }
+    
+    .baslik2{
+        top: 400px;
+    }
+}
